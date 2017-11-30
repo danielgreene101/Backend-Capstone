@@ -1,0 +1,9 @@
+<h1>Edit Character</h1>
+<%= simple_form_for @character, :html => { :multipart => true } do |f| %>
+    <%= f.input :name, label: "Character Name:"%>
+    <%= f.select :series_id, @series %>
+    <%= f.input :description, label: "Character Description:"%>
+    <%= f.input :thoughts, label: "Thoughts:"%>
+    <%= f.button :submit %>
+
+<%end%>

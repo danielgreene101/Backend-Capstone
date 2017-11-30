@@ -1,0 +1,8 @@
+<%= simple_form_for @character do |f| %>
+    <%= f.input :name, label: "Character Name:"%>
+    <%= select_tag(:series_id, options_for_select(@series), :prompt => "Choose Series")%>
+    <%= f.input :description, label: "Character Description:"%>
+    <%= f.input :thoughts, label: "Thoughts:"%>
+    <%= f.button :submit %>
+
+<%end%>
