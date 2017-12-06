@@ -15,3 +15,63 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ .containered{
+     padding: 0 !important;
+     margin-top: 0 !important;
+     text-align: left;
+     margin: 0px 20px;
+
+ }
+ .container{
+    padding: 0 !important;
+    margin-top: 0 !important;
+
+}
+
+ .alert{
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ nav{
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ a{
+     color: rgb(165, 42, 42);
+ }
+
+ p{
+     color: black;
+ }
+
+ h3{
+     color: brown;
+     text-decoration: underline;
+     font-size: 2em;
+ }
+
+ h2{
+    color: brown;
+ }
+ h4{
+     color: black;
+ }
+
+ body{
+    background-image:url('one.png');
+    text-align: center;
+ }
+
+ .characters{
+     display: inline-flex;
+     border: 2px solid black;
+     margin: 5px;
+     padding-right: 45px;
+ }
+
+ .characters li{
+    list-style-type: none;
+ }

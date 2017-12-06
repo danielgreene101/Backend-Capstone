@@ -1,14 +1,16 @@
-<h2><%= @character.name  %></h2>
-<h5>Series: <%= @character.series.name  %></h5>
-<p>Description: <%= @character.description  %></p>
-<p>Thoughts: <%= @character.thoughts  %></p>
+<div class="containered">
+    <h2><%= @character.name  %></h2>
+    <h4>Series: <%= @character.series.name  %></h4>
+    <p>Description: <%= @character.description  %></p>
+    <p>Thoughts: <%= @character.thoughts  %></p>
 
-<%= link_to "Back", root_path %>
+    <%= link_to "Back", root_path %>
 
-<% if user_signed_in?%>
+    <% if user_signed_in?%>
 
-    <% if @character.user_id == current_user.id%>
-        <%= link_to 'Edit', edit_character_path(@character) %>
-        <%= link_to 'Delete', character_path(@character), method: :delete, data: { confirm: "Are you sure?" } %>
+        <% if @character.user_id == current_user.id%>
+            <%= link_to 'Edit', edit_character_path(@character) %>
+            <%= link_to 'Delete', character_path(@character), method: :delete, data: { confirm: "Are you sure?" } %>
+        <%end%>
     <%end%>
-<%end%>
+</div>

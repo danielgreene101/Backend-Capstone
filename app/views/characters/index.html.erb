@@ -1,15 +1,19 @@
-
-<% if params[:series].blank? %>
-    <h3>Character Organizer</h3>
-<%else%>
-    <h4 class="current-cat"><%= params[:series] %></h4>
-<%end%>
-<% if @characters.count == 0 %>
-    <p>No characters for this series have been added yet.</p>
-
-<%else %>
-    <% @characters.each do |char|%>
-        <h2><%= link_to char.name, character_path(char) %></h2>
-        <p><%= char.series.name %></p>
+<div class="container">
+    <% if params[:series].blank? %>
+    <%else%>
+        <h4 class="current-cat"><%= params[:series] %></h4>
     <%end%>
-<%end%>
+    <% if @characters.count == 0 %>
+        <p>No characters for this series have been added yet.</p>
+
+    <%else %>
+        <% @characters.each do |char|%>
+         <div class="characters">
+         <ul>
+            <li><h2><%= link_to char.name, character_path(char) %></h2></li>
+            <li><p><%= char.series.name %></p></li>
+        </ul>
+        </div>
+        <%end%>
+    <%end%>
+</div>
