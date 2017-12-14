@@ -40,7 +40,7 @@
  }
 
  a{
-     color: rgb(165, 42, 42);
+     color: #2F4F4F;
  }
 
  p{
@@ -54,7 +54,7 @@
  }
 
  h2{
-    color: brown;
+    color: #2F4F4F;
  }
  h4{
      color: black;
@@ -70,6 +70,17 @@
      border: 2px solid black;
      margin: 5px;
      padding-right: 45px;
+     background-color: #E6E6FA;
+     box-shadow:0 0 25px 3px rgb(0, 0, 0);
+     border-radius:100px/100px;
+     z-index:-1;
+ }
+
+ .characters:hover{
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+    right: 15px;left: auto;
  }
 
  .characters li{
