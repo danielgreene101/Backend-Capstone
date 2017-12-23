@@ -15624,3 +15624,876 @@ Processing by CharactersController#index as HTML
 Completed 200 OK in 166ms (Views: 157.6ms | ActiveRecord: 5.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-15 09:42:27 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (2.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (0.6ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.7ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (337.7ms)
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 2277ms (Views: 2196.1ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-15 09:44:23 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (144.9ms)
+  [1m[36mSeries Load (0.6ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 384ms (Views: 298.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-15 09:44:27 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (39.1ms)
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 216ms (Views: 198.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/characters/62" for 127.0.0.1 at 2017-12-15 11:10:27 -0600
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"62"}
+  [1m[36mCharacter Load (10.0ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (26.9ms)
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 411ms (Views: 344.7ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/characters/69" for 127.0.0.1 at 2017-12-15 11:11:00 -0600
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 69], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (6.9ms)
+  [1m[36mSeries Load (1.5ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 268ms (Views: 250.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/characters/62" for 127.0.0.1 at 2017-12-15 11:16:30 -0600
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"62"}
+  [1m[36mCharacter Load (7.6ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (47.4ms)
+  [1m[36mSeries Load (5.9ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 539ms (Views: 472.0ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/characters/68" for 127.0.0.1 at 2017-12-15 11:16:40 -0600
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mCharacter Load (34.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 68], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (5.5ms)
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 328ms (Views: 267.9ms | ActiveRecord: 34.7ms)
+
+
+Started GET "/characters?series=Harry+Potter" for 127.0.0.1 at 2017-12-15 11:16:58 -0600
+Processing by CharactersController#index as HTML
+  Parameters: {"series"=>"Harry Potter"}
+  [1m[36mSeries Load (11.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."name" = ? LIMIT ?[0m  [["name", "Harry Potter"], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters" WHERE "characters"."series_id" = ?[0m  [["series_id", 12]]
+  [1m[36mCharacter Load (1.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."series_id" = ? ORDER BY created_at DESC[0m  [["series_id", 12]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (45.5ms)
+  [1m[36mSeries Load (0.6ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 213ms (Views: 173.4ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-15 11:17:01 -0600
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (2.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.6ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.5ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (190.0ms)
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 342ms (Views: 325.2ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/characters?series=Discworld" for 127.0.0.1 at 2017-12-15 11:17:07 -0600
+Processing by CharactersController#index as HTML
+  Parameters: {"series"=>"Discworld"}
+  [1m[36mSeries Load (0.7ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."name" = ? LIMIT ?[0m  [["name", "Discworld"], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters" WHERE "characters"."series_id" = ?[0m  [["series_id", 10]]
+  Rendered characters/index.html.erb within layouts/application (7.9ms)
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 304ms (Views: 292.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-15 11:17:11 -0600
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (9.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.5ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (218.2ms)
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 528ms (Views: 499.9ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-15 11:17:25 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (62.1ms)
+  [1m[36mSeries Load (0.7ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 351ms (Views: 347.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-15 11:17:41 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tDf8BV8jSUMTa6JTTjP80DFDSYD6dA5CidDASoS0FZiDpDlgEoRlquiLAGboKxNVQcFpS5CMx+tRnvAcE9RXmA==", "user"=>{"email"=>"kshehisf", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (1.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kshehisf"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (36.5ms)
+  [1m[36mSeries Load (0.5ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 598ms (Views: 219.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-15 11:17:45 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (77.4ms)
+  [1m[36mSeries Load (1.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 400ms (Views: 351.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-15 11:17:48 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"335I4WBPZHpEUg8gjotk82fFSFTtHNt1pmcHFpw9tl3InKbou2I9Zw2rn678zEZNpYD10q3lty9tWseriVaPog==", "user"=>{"email"=>"d.b.greene101@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "d.b.greene101@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-15 17:17:48.355983"], ["last_sign_in_at", "2017-12-14 14:35:13.892156"], ["sign_in_count", 8], ["updated_at", "2017-12-15 17:17:48.362683"], ["id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 294ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-15 11:17:48 -0600
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (1.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (0.7ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.7ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.7ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (169.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 287ms (Views: 271.4ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-15 11:17:51 -0600
+Processing by CharactersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series"[0m
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (21.9ms)
+  Rendered characters/new.html.erb within layouts/application (26.9ms)
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 185ms (Views: 125.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-15 11:18:15 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m4gtJpz8dQllwh2LF7zydFzctvK5xHVEhJnaZoLwcEdG5KD49Nd7NHnvMm985BX/3He51v9YzAFANSeUdir/nw==", "character"=>{"name"=>"Delorioius", "description"=>"She awesome teacher", "thoughts"=>"Anyone who disagrees is wrong"}, "series_id"=>"9", "commit"=>"Create Character"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (5.7ms)[0m  [1m[32mINSERT INTO "characters" ("name", "description", "thoughts", "created_at", "updated_at", "user_id", "series_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Delorioius"], ["description", "She awesome teacher"], ["thoughts", "Anyone who disagrees is wrong"], ["created_at", "2017-12-15 17:18:15.456320"], ["updated_at", "2017-12-15 17:18:15.456320"], ["user_id", 1], ["series_id", 9]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-15 11:18:15 -0600
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (1.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (131.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 260ms (Views: 246.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/characters/68" for 127.0.0.1 at 2017-12-15 11:18:18 -0600
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 68], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mSeries Load (3.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (12.5ms)
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 132ms (Views: 118.2ms | ActiveRecord: 4.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-15 11:18:23 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LMSMVMorSJDPMUZ5k48wnw+/YZE+VXEfvXa6VkSVFSsBl1/pkGwBaIOslnQxm2pUwT9rDfwGJDD7F+Nq2pvwPQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-15 11:18:23 -0600
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (1.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (108.5ms)
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 217ms (Views: 207.9ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/characters/69" for 127.0.0.1 at 2017-12-15 11:18:39 -0600
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 69], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (17.4ms)
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 238ms (Views: 207.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/characters?series=The+Wheel+of+Time" for 127.0.0.1 at 2017-12-15 11:19:29 -0600
+Processing by CharactersController#index as HTML
+  Parameters: {"series"=>"The Wheel of Time"}
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."name" = ? LIMIT ?[0m  [["name", "The Wheel of Time"], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters" WHERE "characters"."series_id" = ?[0m  [["series_id", 1]]
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."series_id" = ? ORDER BY created_at DESC[0m  [["series_id", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (36.4ms)
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 206ms (Views: 196.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-15 11:19:32 -0600
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (1.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.5ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.6ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.5ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (205.3ms)
+  [1m[36mSeries Load (1.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 342ms (Views: 325.0ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/characters?series=Harry+Potter" for 127.0.0.1 at 2017-12-15 11:19:43 -0600
+Processing by CharactersController#index as HTML
+  Parameters: {"series"=>"Harry Potter"}
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."name" = ? LIMIT ?[0m  [["name", "Harry Potter"], ["LIMIT", 1]]
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters" WHERE "characters"."series_id" = ?[0m  [["series_id", 12]]
+  [1m[36mCharacter Load (4.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."series_id" = ? ORDER BY created_at DESC[0m  [["series_id", 12]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (38.2ms)
+  [1m[36mSeries Load (0.5ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 172ms (Views: 155.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/characters/67" for 127.0.0.1 at 2017-12-15 11:20:06 -0600
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 67], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (4.2ms)
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 136ms (Views: 124.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-15 11:20:10 -0600
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (5.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" ORDER BY created_at DESC[0m
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.4ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.1ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.5ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.3ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSeries Load (0.2ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Series Load (0.0ms)[0m  [1m[34mSELECT  "series".* FROM "series" WHERE "series"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered characters/index.html.erb within layouts/application (193.7ms)
+  [1m[36mSeries Load (0.5ms)[0m  [1m[34mSELECT "series".* FROM "series" ORDER BY "series"."name" ASC[0m
+Completed 200 OK in 334ms (Views: 309.5ms | ActiveRecord: 12.6ms)
+
+
